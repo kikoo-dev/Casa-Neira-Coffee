@@ -5,7 +5,7 @@ import { Search, ShoppingCart, Plus, Minus, Trash2, X, MessageSquare } from 'luc
 import products from '../lib/products'
 import CustomerModal from '../components/CustomerModal'
 
-const categories = ['All', 'Coffee', 'Non-Coffee', 'Pastry']
+const categories = ['All', 'Coffee', 'Non-Coffee']
 
 export default function Menu() {
   const navigate = useNavigate()
