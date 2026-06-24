@@ -114,42 +114,8 @@ export default function Dashboard() {
           <title>Struk Casa Neira Coffe</title>
           <style>
             * { box-sizing: border-box; margin: 0; padding: 0; }
-            body {
-              background: #fff;
-              display: flex;
-              justify-content: center;
-              padding: 10px;
-              font-family: 'Courier New', Courier, monospace;
-            }
-            .receipt-content {
-              background: #ffffff;
-              width: 320px;
-              padding: 24px 20px;
-              font-size: 13px;
-              color: #1a1a1a;
-            }
-            .receipt-header { text-align: center; margin-bottom: 16px; }
-            .receipt-header .store-name { font-size: 17px; font-weight: bold; margin-bottom: 6px; }
-            .receipt-header .store-address { font-size: 12px; color: #555; line-height: 1.6; }
-            .divider { border: none; border-top: 1px dashed #aaa; margin: 12px 0; }
-            .divider-solid { border: none; border-top: 1px solid #ccc; margin: 12px 0; }
-            .info-row { display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 12px; }
-            .info-row .label { color: #666; }
-            .badge { display: block; text-align: center; font-size: 11px; letter-spacing: 0.1em; color: #555; margin: 8px 0; }
-            .item-row { display: flex; justify-content: space-between; margin-bottom: 6px; }
-            .item-row .item-name { flex: 1; }
-            .item-row .item-qty { width: 34px; text-align: center; color: #777; }
-            .item-row .item-price { text-align: right; }
-            .total-row { display: flex; justify-content: space-between; margin-bottom: 4px; }
-            .total-row.grand { font-weight: bold; font-size: 14px; }
-            .payment-row { display: flex; justify-content: space-between; margin-bottom: 4px; font-size: 12px; }
-            .payment-row .val { font-weight: bold; }
-            .footer { text-align: center; margin-top: 12px; font-size: 12px; color: #555; line-height: 1.7; }
-            .footer .tagline { font-size: 13px; color: #1a1a1a; margin-bottom: 4px; }
-            @media print {
-              body { padding: 0; }
-              .receipt-content { width: 80mm; padding: 10px; }
-            }
+            body { background: #fff; font-family: 'Courier New', Courier, monospace; }
+            @media print { body { padding: 0; } }
           </style>
         </head>
         <body>${receiptRef.current?.innerHTML || ''}</body>
@@ -167,18 +133,8 @@ export default function Dashboard() {
           <title>Nota Pesanan Casa Neira Coffee</title>
           <style>
             * { box-sizing: border-box; margin: 0; padding: 0; }
-            body { font-family: 'Courier New', monospace; margin: 0; padding: 10px; width: 80mm; font-size: 11px; line-height: 1.5; }
-            .text-center { text-align: center; }
-            .font-bold { font-weight: bold; }
-            .border-b { border-bottom: 1px dashed #999; }
-            .border-b-2 { border-bottom: 2px dashed #666; }
-            .pb-3 { padding-bottom: 8px; }
-            .mb-3 { margin-bottom: 8px; }
-            .pt-3 { padding-top: 8px; }
-            .text-gray { color: #666; }
-            table { width: 100%; border-collapse: collapse; }
-            table th, table td { text-align: left; padding: 2px 0; font-size: 10px; }
-            table th { border-bottom: 1px solid #ccc; font-weight: bold; }
+            body { background: #fff; font-family: 'Courier New', Courier, monospace; }
+            @media print { body { padding: 0; } }
           </style>
         </head>
         <body>${notaRef.current?.innerHTML || ''}</body>
