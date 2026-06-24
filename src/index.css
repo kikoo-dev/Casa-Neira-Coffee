@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-coffee-50: #fdf8f0;
+  --color-coffee-100: #f5e6d0;
+  --color-coffee-200: #e8cba0;
+  --color-coffee-300: #d4a56a;
+  --color-coffee-400: #c08a45;
+  --color-coffee-500: #a06e35;
+  --color-coffee-600: #7d5530;
+  --color-coffee-700: #63442a;
+  --color-coffee-800: #4e3625;
+  --color-coffee-900: #3e2c1e;
+  --color-coffee-950: #221810;
+  --color-cream-50: #fefcf5;
+  --color-cream-100: #fdf6e0;
+  --color-cream-200: #fae9b8;
+  --color-cream-300: #f5d78a;
+  --color-cream-400: #e8b950;
+  --color-cream-500: #d49a2a;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-coffee-300) transparent;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.receipt-print {
+  font-family: 'Courier New', monospace;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .receipt-print,
+  .receipt-print * {
+    visibility: visible;
+  }
+  .receipt-print {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 80mm;
+    padding: 10px;
+  }
+}
